@@ -1,5 +1,6 @@
 # CustomerChurn
 <p> memprediksi perilaku pelanggan dengan klasifikasi pelanggan setia dan mana yang cenderung pindah ke kompetitor lain.</p>
+
 ## Page DashBoard
 ![image](https://github.com/NabilLDZ/ds_CustomerChurn/assets/126550914/55ed4aef-ac09-41bb-8bba-0051acb22197)
 
