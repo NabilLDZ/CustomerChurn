@@ -1,0 +1,105 @@
+<!-- pelanggan page  -->
+{%include 'header/header.html'%}
+
+    <body class="sb-nav-fixed">
+       
+        {%include 'header/topbar.html'%}             
+
+        {%include 'header/sidebar.html'%} 
+
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Pelanggan</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Pelanggan</li>
+                        </ol>
+
+                        {%include 'modal/modal.html'%}
+
+                        <!-- button tambah -->
+                        <div class="card mb-4">
+                            <form action="/predict" method="post">
+                            <div class="card-header">
+                            <i class="fas fa-table me-1"></i>
+                               Data Pelanggan
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tambahModal">
+                                Tambah <i class="fas fa-plus"></i>
+                            </button>
+                            
+                            <button type="submit" class="btn btn-success">
+                                Prediksi <i class="fa-solid fa-crosshairs"></i>
+                            </button>
+                            </form>
+                            
+                        </div>
+                        <!-- end button tambah -->
+                             
+                            <div class="card-body">
+                                <table id="datatablesSimple"> 
+                                    <thead>
+                                        <tr>
+                                            <th>UpdateAT</th>
+                                            <th>Customer ID</th>
+                                            <th>Name</th>
+                                            <th>Gender</th>
+                                            <th>SeniorCitizen</th>
+                                            <th>Partner</th>
+                                            <th>Tenure</th>
+                                            <th>PhoneService</th>
+                                            <th>StreamingTV</th>
+                                            <th>InternetService</th>
+                                            <th>PaperlessBilling</th>
+                                            <th>MonthlyCharges</th>
+                                            <th>TotalCharges</th>
+                                            <th>Pred Churn</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    
+                                    
+                                    <tbody>
+                                        {% for d in pelanggan %}
+                                      <tr>
+                                         
+                                          <td>{{ d[0] }}</td>
+                                          <td>{{ d[1] }}</td>
+                                          <td>{{ d[2] }}</td>
+                                          <td>{{ d[3] }}</td>
+                                          <td>{{ d[4] }}</td>
+                                          <td>{{ d[5] }}</td>
+                                          <td>{{ d[6] }}</td>
+                                          <td>{{ d[7] }}</td>
+                                          <td>{{ d[8] }}</td>
+                                          <td>{{ d[9] }}</td>
+                                          <td>{{ d[10] }}</td>
+                                          <td>{{ d[11] }}</td>
+                                          <td>{{ d[12] }}</td>
+                                          <td>{{ d[13]}}</td>
+                                          <td>
+                                            <a href="" class="btn btn-warning" role="button" data-bs-toggle="modal" data-bs-target="#editModal{{d[1]}}"><i class="fas fa-edit"></i></a>
+                                            {%include 'modal/modaledit.html'%} 
+                                            <a href="/pelanggan/delete/{{d[1]}}" class="btn btn-danger" role="button" onclick="return confirm('Are you sure you want to delete?');"><i class="far fa-trash-alt"></a></td> 
+                                          </td>
+                                         
+                                      </tr>
+                                      {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </main>
+                
+                {%include 'footer/footer.html'%}
+
+            </div>
+        </div>
+        {%include 'footer/js.html'%}
+
+    </body>
+</html>
+
+<!-- end pelanggan page  -->

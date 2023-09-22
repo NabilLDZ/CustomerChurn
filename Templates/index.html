@@ -1,0 +1,33 @@
+{%include 'header/header.html'%}
+
+    <body class="sb-nav-fixed">
+       
+        {%include 'header/topbar.html'%}             
+
+        {%include 'header/sidebar.html'%} 
+
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Dashboard</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Dashboard</li>
+                        </ol>
+
+
+                        {%include 'modal/card.html'%}
+
+                    </div>
+                </main>
+                
+                {%include 'footer/footer.html'%}
+
+            </div>
+        </div>
+
+
+        {%include 'footer/js.html'%}
+
+        
+    </body>
+</html>

@@ -1,0 +1,80 @@
+                <!-- Form input Modal -->
+                    <form action="/pelanggan/tambah" method="post">
+                        <div class="modal fade" id="tambahModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="tambahModal">Tambah Data Pelanggan</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                
+                                <label for="name" class="form-label">Name</label>
+                                <input class="form-control form-control-sm" name="name" type="text" placeholder="what's his name?" aria-label=".form-control-sm example">
+
+                                <label for="gender" class="form-label">Gender</label>
+                                <select class="form-select form-select-sm" name="gender" aria-label=".form-select-sm example">
+                                    <option selected>customer is a male or a female?</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Male">Male</option>
+                                </select>
+                                 
+                                <label for="seniorcitizen" class="form-label">Senior Citizen</label>
+                                <select class="form-select form-select-sm" name="seniorcitizen" aria-label=".form-select-sm example">
+                                    <option selected>customer is a senior citizen or not?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                                <label for="partner" class="form-label">Partner</label>
+                                <select class="form-select form-select-sm" name="partner" aria-label=".form-select-sm example">
+                                    <option selected>customer has a partner or not?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                                <label for="tenure" class="form-label">Tenure</label>
+                                <input class="form-control form-control-sm" name="tenure" type="text" placeholder="Number of months the customer has stayed with the company?" aria-label=".form-control-sm example">
+                                
+                                
+                                <label for="phoneservice" class="form-label">Phone Service</label>
+                                <select class="form-select form-select-sm" name="phoneservice" aria-label=".form-select-sm example">
+                                    <option selected>customer has a phone service or not?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                                <label for="streamingtv" class="form-label">Streaming TV</label>
+                                <select class="form-select form-select-sm" name="streamingtv" aria-label=".form-select-sm example">
+                                    <option selected>customer has a internet service or not?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                                <label for="internetservice" class="form-label">Internet Service</label>
+                                <select class="form-select form-select-sm" name="internetservice" aria-label=".form-select-sm example">
+                                    <option selected>customer has a internet service or not?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                                <label for="papersbiling" class="form-label">Papers Biling</label>
+                                <select class="form-select form-select-sm" name="papersbiling" aria-label=".form-select-sm example">
+                                    <option selected>ustomer has paperless billing or not?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                                <label for="monthlycharges" class="form-label">Monthly Charges</label>
+                                <input class="form-control form-control-sm" name="monthlycharges" type="text" placeholder="The amount charged to the customer monthly?" aria-label=".form-control-sm example">
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Keluar</button>
+                                <button type="submit" class="btn btn-primary">Simpan</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </form> 
+                <!-- end Form input Modal -->

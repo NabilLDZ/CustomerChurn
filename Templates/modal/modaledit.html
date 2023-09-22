@@ -1,0 +1,83 @@
+                <!-- Form edit Modal -->
+                    <form action="/pelanggan/edit/{{d[1]}}" method="post">
+                        <div class="modal fade" id="editModal{{d[1]}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="editModal">Edit Data Pelanggan</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                
+                                <label for="name" class="form-label">Name</label>
+                                <input class="form-control form-control-sm" name="name" type="text" value='{{d[2]}}' placeholder="what's his name?" aria-label=".form-control-sm example">
+
+                                <label for="gender" class="form-label">Gender</label>
+                                <select class="form-select form-select-sm" name="gender" aria-label=".form-select-sm example">
+                                    <option value='{{d[3]}}' selected>{{d[3]}}</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Male">Male</option>
+                                </select>
+                                 
+                                <label for="seniorcitizen" class="form-label">Senior Citizen</label>
+                                <select class="form-select form-select-sm" name="seniorcitizen" aria-label=".form-select-sm example">
+                                    <option value='{{d[4]}}' selected>{{d[4]}}</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                                <label for="partner" class="form-label">Partner</label>
+                                <select class="form-select form-select-sm" name="partner" aria-label=".form-select-sm example">
+                                    <option value='{{d[5]}}' selected>{{d[5]}}</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                                <label for="tenure" class="form-label">Tenure</label>
+                                <input class="form-control form-control-sm" name="tenure" type="text" value='{{d[6]}}' placeholder="Number of months the customer has stayed with the company?" aria-label=".form-control-sm example">
+                                
+                                
+                                <label for="phoneservice" class="form-label">Phone Service</label>
+                                <select class="form-select form-select-sm" name="phoneservice" aria-label=".form-select-sm example">
+                                    <option value='{{d[7]}}' selected>{{d[7]}}</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                                <label for="streamingtv" class="form-label">Streaming TV</label>
+                                <select class="form-select form-select-sm" name="streamingtv" aria-label=".form-select-sm example">
+                                    <option value='{{d[8]}}' selected>{{d[8]}}</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                                <label for="internetservice" class="form-label">Internet Service</label>
+                                <select class="form-select form-select-sm" name="internetservice" aria-label=".form-select-sm example">
+                                    <option value='{{d[9]}}' selected>{{d[9]}}</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+
+                                <label for="papersbiling" class="form-label">Papers Biling</label>
+                                <select class="form-select form-select-sm" name="papersbiling" aria-label=".form-select-sm example">
+                                    <option value='{{d[10]}}' selected>{{d[10]}}</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                                <label for="monthlycharges" class="form-label">Monthly Charges</label>
+                                <input class="form-control form-control-sm" name="monthlycharges" type="text" value='{{d[11]}}' placeholder="The amount charged to the customer monthly?" aria-label=".form-control-sm example">
+                                    
+                                    
+                                <!-- Modal -->
+                                </div>
+                                <div class="modal-footer">
+                                <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Keluar</button>
+                                <button type="submit" class="btn btn-primary">Simpan</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </form>            
+                <!-- end Form edit Modal -->
